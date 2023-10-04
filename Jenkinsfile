@@ -16,7 +16,13 @@ pipeline{
 				sh 'lscpu'
 			}
 		}
+        stage('4-deploy'){
+			steps{
+				echo "we are on pipeline code module"
+			}
+		}
 	} 
 		
 	}
+
 }
